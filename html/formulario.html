@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Formularios en html</title>
+        <link href="../css/style_page.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            form{
+                width: 50%;
+                height: auto;
+                padding: 30px;
+                background-color: #ab555f;
+                color: #ddc1c6;
+                margin: 0 auto;
+            }
+            label, input{
+                display: block;
+                margin-left: 10px;
+            }
+            label{
+                padding-bottom: 7px;
+                padding-top: 7px;
+            }
+            input[type=text],input[type=password],input[type=number],select,input[type=color],input[type=date],textarea,input[type=email]{
+                width: 100%;
+                color: #ab555f;
+                padding: 8px;
+                margin: 0 auto;
+                font-weight: bold;
+                border: 3px solid;
+                border-color: #ab555f;
+                border-radius: 10px;
+                background-color: #f5efe4;
+            }
+            input[type=submit]{
+                width: 40%;
+                background-color: #ddc1c6;
+                margin-top: 20px;
+                padding: 10px;
+                margin: 20px auto;
+                border-radius: 10px;
+                border-color: #ddc1c6;
+            }
+            input[type=text]:focus,input[type=password]:focus,textarea:focus,input[type=email]:focus{
+                background-color: #995758;
+                border: 3px solid #ddc1c6;
+                border-radius: 10px;
+                color: #f5efe4;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Formularios en HTML</h1>
+        </header>
+        <nav>
+            <ul>
+				<li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html/listas.html">Listas</a></li>
+                <li><a href="../html/enlaces.html">Enlaces</a></li>
+                <li><a href="../html/tablas.html">Tablas</a></li>
+                <li><a href="../html/imagenes.html">Imagenes</a></li>
+                <li><a href="../html/audio.html">Audio</a></li>
+                <li><a href="../html/video.html">Video</a></li>
+                <li><a href="../html/formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2 id="formu1">Formulario usuario</h2>
+                <p>¡Hola! Conozcámonos, ¿quién eres y qué haces aquí? Las respuestas son confidenciales, no te preocupes.</p>
+                <form action="" method="put">
+                    <label id="">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <label ide="">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena">
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+            <section>
+                <h2 id="formu2"> Formulario sobre la página</h2>
+                <p>Esta página es la primera vez que hago una Web desde 0 y hontestamente, apreciaría mucho el feedback. Por favor, responde el formulario de abajo.</p>
+                <form id="form1" name="form1" method="get">
+                    <label for="text">Nombre:</label>
+                    <input type="text" name="nombre" id="text">
+                    <label for="number">Edad:</label>
+                    <input type="number" name="number" id="number" min="18" max="90">
+                    <label for="select">¿Qué página disfrutaste más?</label>
+                    <select name="pagina" id="pagina">
+                        <option value="Inicio">Inicio</option>
+                        <option value="Listas">Listas</option>
+                        <option value="Enlaces">Enlaces</option>
+                        <option value="Tablas">Tablas</option>
+                        <option value="Imágenes">Imágenes</option>
+                        <option value="Audio">Audio</option>
+                        <option value="Vídeo">Video</option>
+                        <option value="Formulario">Formulario</option>
+                        <input type="submit" value="Enviar">
+                    </select>
+                </form>
+            </section>
+            <section>
+                <h2 id="formu3">Formulario sobre música</h2>
+                <p>Ya que la música es sumamente importante para mí, me gustaría saber si es que podríamos conectar de alguna forma, para eso es esta sección. Gracias por contestar de antemano.</p>
+                <form id="form2" name="form2" method="post">
+                    <label for="textfield">Nombre</label>
+                    <input type="text" name="textfield" id="textfield">
+                    <label for="Genero">Género:</label>
+                    <table style="width: 40%">
+                        <tr>
+                            <td><input type="radio" name="Genero" value="fem" id="Genero_0"></td>
+                            <td style="text-align: center"><label>Femenino</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="Genero" value="masc" id="Genero_1"></td>
+                            <td style="text-align: center"><label>Masculino</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="Genero" value="otro" id="Genero_2"></td>
+                            <td style="text-align: center"><label>Otro</label></td>
+                        </tr>
+                    </table>
+                    <label for="musica">¿Cuál es tu género musical favorito?</label>
+                    <p style="display:grid">
+                        <label>K-pop</label>
+                        <input type="checkbox" name="generos de música" value="kpop" id="generosdemuacutesica_0">
+                        <br>
+                        <label>Jazz</label>
+                        <input type="checkbox" name="generos de música" value="jazz" id="generosdemuacutesica_1">
+                        <br>
+                        <label>Pop</label>
+                        <input type="checkbox" name="generos de música" value="pop" id="generosdemuacutesica_2">
+                        <br>
+                        <label>Rock</label>
+                        <input type="checkbox" name="generos de música" value="rock" id="generosdemuacutesica_3">
+                        <br>
+                        <label>Metal</label>
+                        <input type="checkbox" name="generos de música" value="metal" id="generosdemuacutesica_4">
+                        <br>
+                    </p>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+            <section>
+                <h2 id="formu4">Formulario sobre ONEUS</h2>
+                <p>Finalmente, este formulario es sobre mi grupo favorito y para saber si es que tienes algún interés en ellos, de ser así, me contactaré contigo apenas pueda. Si no tienes interés, puedes omitir este formulario.</p>
+                <form action="" method="get">
+                    <label><b>Formulario sobre ONEUS</b></label>
+                    <label for="text">Nombre:</label>
+                    <input type="text" name="nombre" id="text">
+                    <label for="number">Edad:</label>
+                    <input type="number" name="number" id="number" min="18" max="70">
+                    <label for="text">Username en alguna red social</label>
+                    <input type="text" name="nombre" id="text">
+                    <label for="red_social">¿De qué red social es el usuario que nos proporcionaste?</label>
+                    <table style="width: 40%">
+                        <tr>
+                            <td><input type="radio" id="red_social_1" name="redsocial" value="X"></td>
+                            <td style="text-align: center"><label for="X">X</label><td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="red_social_2" name="redsocial" value="Instagram"></td>
+                            <td style="text-align: center"><label for="Instagram">Instagram</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="red_social_3" name="redsocial" value="TikTok"></td>
+                            <td style="text-align: center"><label for="TikTok">TikTok</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="red_social_4" name="redsocial" value="Otro"></td>
+                            <td style="text-align: center"><label for="Otro">Otro</label></td>
+                        </tr>
+                    </table>
+                    <label for="fecha">Cumpleaños:</label>
+                    <input type="date" id="fecha" name="fecha">
+                    <label>¿Qué es lo que te interesa del grupo?</label>
+                    <textarea name="message" rows="4" cols="60%">Escribe tu respuesta aquí.</textarea>
+                    <label>¿Cuál es tu miembro favorito o quién te llama la atención?</label>
+                    <select name="miembros">
+                        <option value="Seoho">Seoho</option>
+                        <option value="Leedo">Leedo</option>
+                        <option value="Keonhee">Keonhee</option>
+                        <option value="Hwanwoong">Hwanwoong</option>
+                        <option value="Xion">Xion</option>
+                    </select>
+                    <label for="select">¿Cuál de estos nombres te parece más llamativo?</label>
+                    <select name="album" id="album">
+                        <option value="LightUs">Light Us</option>
+                        <option value="RaiseUs">Raise Us</option>
+                        <option value="FlyWithUs">Fly With Us</option>
+                        <option value="InItsTime">In Its Time</option>
+                        <option value="Lived">Lived</option>
+                        <option value="Devil">Devil</option>
+                        <option value="BinaryCode">Binary Code</option>
+                        <option value="BloodMoon">Blood Moon</option>
+                        <option value="Trickster">Trickster</option>
+                        <option value="Malus">Malus</option>
+                        <option value="Pygmalion">Pygmalion</option>
+                        <option value="LaDolceVita">La Dolce Vita</option>
+                    </select>
+                    <label for="colorfan">Selecciona un color que te gustaría para el fandom:</label>
+                    <input type="color" id="favcolor" name="colorfan">
+                    <label>¿Tienes algún comentario o pregunta sobre el grupo?</label>
+                    <textarea name="message" rows="4" cols="60%">Escribe tu respuesta aquí.</textarea>
+                    <label for="email">Por favor, proporciona tu correo para que nos pongamos en contacto contigo:</label>
+                    <input type="email" id="email" name="email">
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="#formu1">Formulario 1</a></li>
+                    <li><a href="#formu2">Formulario 2</a></li>
+                    <li><a href="#formu3">Formulario 3</a></li>
+                    <li><a href="#formu4">Formulario 4</a></li>
+                </ul>
+            </nav>
+        </main>
+        <footer>
+            <h5>Elaborado por Brenda Mayté Portilla Hernández</h5>
+        </footer>
+    </body>
+</html>

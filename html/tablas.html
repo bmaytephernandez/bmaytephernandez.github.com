@@ -1,0 +1,392 @@
+<html>
+    <head>
+        <title>Tablas en html</title>
+        <link rel="stylesheet" href="../css/style_page.css" type="text/css">
+        <style type="text/css">
+            #tabla1{
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                color: #ab555f;
+                border-style: solid;
+                border-color: #ab555f;
+                border-width: 5px;
+                border-spacing: 5px;
+            }
+            #tabla1 th{
+                background-color: #995758;
+                color: #f5efe4;
+            }
+            #tabla1 td{
+                background-color: #f5efe4;
+                text-align: left;
+                border-style: solid;
+                border-color: #ab555f;
+                border-width: medium;
+                border-radius: 5px;
+                margin: 10px;
+                padding: 8px;
+                text-align: center;
+            } 
+            /*#tabla2{
+                color: #995758;
+            }
+            #tabla2 th{
+                color: #ffdbd7;
+            }
+            #tabla2 td{
+                height: 50px;
+                padding: 8px;
+            }*/
+            .celda_centrada{
+                text-align: center;
+                padding: 0px;
+                background-color: #ddc1c6;
+            }
+            .tabla_dos{
+                width: 700px;
+                border-collapse: collapse;
+                border-color: #995758;
+                color: #ffdbd7;
+                margin: 0 auto;
+            }
+            .tabla_dos td, .tabla_dos th{
+                width: 150px;
+                padding: 8px;
+                color: #ab555f;
+                border-color: #995758;
+                border-style: dashed;
+            }
+            .tabla_dos th{
+                background-color: #995758;
+                color: #f7f1e1;
+            }
+            .tabla_dos td{
+                background-color: #f5efe4;
+            }
+            #TablaZebra{
+                 width: 100%;
+                 border-color: #ab555f;
+                 border-width: 3px;
+                 border-style: solid;
+                 border-collapse: collapse;
+                 }
+            #TablaZebra th{
+                 border-style: solid;
+                 border-width: 1px;
+                 border-color: #f5efe4;
+                 padding:5px;
+                 }
+            #TablaZebra tbody td{
+                 padding: 5px;
+                 border-style: solid;
+                 border-width: 1px;
+                 border-color: #ab555f;
+                 }
+             #TablaZebra tbody tr:nth-child(even){
+                 background-color: #ffdbd7;
+                 color: #995758;
+                 }
+             #TablaZebra tbody tr:nth-child(odd){
+                 background-color: #f5efe4;
+                 color: #ab555f;
+                 }
+             #TablaZebra thead tr{
+                 background-color: #ab555f;
+                 color: #f5efe4;
+                 }
+            .tabla_hover{
+                 width: 80%;
+                 margin:0 auto;
+                 border-style: solid;
+                 border-color: #995758;
+                 border-collapse: collapse;
+                 }
+             .tabla_hover tbody tr{
+                 background-color: #f5efe4;
+                 color: #995758;
+                 }
+             .tabla_hover tbody td{
+                 padding: 8px;
+                 }
+             .tabla_hover thead th{
+                 background-color: #ab555f;
+                 color: #f5efe4;
+                 padding:5px;
+                 }
+            .tabla_hover tbody tr:hover{
+                 background-color: #ffdbd7;
+                 color: #ab555f; 
+                 }
+            /*.tabla_hover th td{
+                 border-style: dotted;
+                 border-color: #995758;
+                 border-width: 1px;
+                 }*/ 
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Tablas en html</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html/listas.html">Listas</a></li>
+                <li><a href="../html/enlaces.html">Enlaces</a></li>
+                <li><a href="../html/tablas.html">Tablas</a></li>
+                <li><a href="../html/imagenes.html">Imagenes</a></li>
+                <li><a href="../html/audio.html">Audio</a></li>
+                <li><a href="../html/video.html">Video</a></li>
+                <li><a href="../html/formulario.html">Formulario</a></li>
+            </ul> 
+        </nav>
+        <main>
+            <section>
+                <h2 id="tabla_uno">Mis dramas favoritos tailandeses</h2>
+                <p>La verdad es que he visto tantos dramas tailandeses que podría hacer un ranking súper largo de ellos. Según mi <b>DramaList</b>, de Tailandia he visto 39 programas y de ellos vengo a hacerte recomendaciones que valen la pena. En este ranking se incluyen tanto Bls como dramas normales. ¡Espero que sean de tu agrado y te animes a ver alguno!</p>
+                <table border="1" id="tabla1">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Episodios</th>
+                            <th>Género</th>
+                            <th>Protagonistas</th>
+                            <th>Calificación</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <tr>
+                            <td>Vice Versa (รักสลับโลก) (2022)</td>
+                            <td>12</td>
+                            <td>Romance, Bl, Fantasía, Juvenil</td>
+                            <td>Sea y Jimmy</td>
+                            <td>10/10</td>
+                        </tr> 
+                        <tr>
+                            <td>Not Me (เขา...ไม่ใช่ผม) (2022)</td>
+                            <td>14</td>
+                            <td>Suspenso, Acción, Drama, Bl</td>
+                            <td>Gun y Off</td>
+                            <td>10/10</td>
+                        </tr> 
+                        <tr>
+                            <td>55:15 Never Too Late (2022)</td>
+                            <td>16</td>
+                            <td>Drama, Comedia, Fantasía</td>
+                            <td>Nanon, Ploy, Khaotung, View y Kay</td>
+                            <td>10/10</td>
+                        </tr> 
+                        <tr>
+                            <td>Home School (นักเรียนต้องขัง) (2023)</td>
+                            <td>18</td>
+                            <td>Misterio, Suspenso, Escolar, Juvenil</td>
+                            <td>Film, Jane, Dew, Nani, Chimon, View, AJ, JJ, Prigkhing, Love, Kay, Jamie, Gun</td>
+                            <td>10/10</td>
+                        </tr> 
+                        <tr>
+                            <td>Midnight Museum (พิพิธภัณฑ์รัตติกาล) (2023)</td>
+                            <td>10</td>
+                            <td>Fantasía</td>
+                            <td>Tor, Gun, Ployphach, Namtan, Saiparn, Foei y Tay</td>
+                            <td>10/10</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            <section style="overflow-x: auto"> 
+                <h2 id="tabla_dos">Mis dramas favoritos chinos</h2>
+                <p>En cuanto a dramas chinos, la verdad es que no soy de ver muchos. Según mi <b>DramaList</b>, solo he visto 9 de ellos, y la readlidad es que cuando inicié a ver dramas fue cuando vi la mayoría en mi lista así que puede que esté un poco desactualizada pero aquí tienes algunas recomendaciones que espero que te gusten.</p>
+                <p>¡Por cierto! Te puse solo la pareja de protagonistas principales, pero normalmente los dramas chinos tienen demasiados personajes.</p>
+                <table id="tabla2" class="tabla_dos">
+                    <thead>
+                        <tr>
+                            <th style="width: 200px">Nombre</th>
+                            <th style="width: 125px">Capítulos</th>
+                            <th style="width: 200px" colspan="2">Protagonistas</th>
+                            <th style="width: 175px">Calificación</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <tr>
+                            <td>When I Fly Towards You (当我飞奔向你) (2023)</td>
+                            <td style="text-align: center; padding: 0">24</td>
+                            <td>Zhou Yi Ran</td>
+                            <td>Zhang Miao Yi</td>
+                            <td style="text-align: center; padding: 0px; background-color: #ffdbd7">10/10</td>
+                        </tr>
+                        <tr>
+                            <td>Exclusive Fairytale (独家童话) (2023)</td>
+                            <td style="text-align: center; padding: 0">24</td>
+                            <td>Wen Jun Hui</td>
+                            <td>Zhang Miao Yu</td>
+                            <td style="text-align: center; padding: 0px; background-color: #ffdbd7">9.5/10</td>
+                        </tr>
+                        <tr>
+                            <td>Hidden Love (偷偷藏不住) (2023)</td>
+                            <td style="text-align: center; padding: 0; width: 100px;">25</td>
+                            <td>Chen Zhe Yuan</td>
+                            <td>Zhao Lu Si</td>
+                            <td style="text-align: center; padding: 0px; background-color: #ffdbd7">9.5/10</td>
+                        </tr>
+                        <tr>
+                            <td>A Love So Beautiful (致我们单纯的小美好) (2017)</td>
+                            <td style="text-align: center; padding: 0">24</td>
+                            <td>Hu Yi Tian</td>
+                            <td>Shen Yue</td>
+                            <td style="text-align: center; padding: 0px; background-color: #ffdbd7">9/10</td>
+                        </tr>
+                        <tr>
+                            <td>Go Ahead (以家人之名) (2020)</td>
+                            <td style="text-align: center; padding: 0">46</td>
+                            <td>Song Wei Long / Steven Zhang</td>
+                            <td>Tan Song Yun</td>
+                            <td style="text-align: center; padding: 0px; background-color: #ffdbd7">9/10</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Promedio:</td>
+                            <td class="celda_centrada" style="background-color: #ab555f; color: #f7f1e1">9.4/10</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section style="overflow-x: auto"> 
+                <h2 id="tabla_tres">Mis dramas favoritos coreanos</h2>
+                <p>Creo que cuando se mencionan dramas, es mucho más fácil pensar en los coreanos porque gracias a ellos se ha tenido un crecimiento increíble, y honestamente, creo que de aquí es donde soy experta. He visto dramas coreanos muy buenos y algunos que definitivamente no volvería a repetir ni porque me pagaran. Según mi <b>DramaList</b> he visto alrededor de 56 dramas coreanos, así que aquí hay una lista de 6 dramas que para mí son un 10/10 y son dramas que toooodos debería de ver alguna vez en la vida.</p>
+                <table id="TablaZebra">
+                    <thead>
+                         <tr>
+                             <th>Nombre</th>
+                             <th>Episodios</th>
+                             <th>Género</th>
+                             <th>Dónde ver</th>
+                             <th>Protagonistas</th>
+                         </tr>
+                    </thead>
+                    <tbody>
+                         <tr>
+                             <td>Twenty-Five, Twenty-One (스물다섯 스물하나) (2022)</td> 
+                             <td>16</td>
+                             <td>Drama, Romance, Juvenil</td>
+                             <td>Netflix</td>
+                             <td>Kim Taeri, Nam Joohyuk, Bona, Choi Hyunwook y Lee Joomyung</td>
+                         </tr>
+                         <tr>
+                             <td>Our Beloved Summer (그 해 우리는) (2022)</td>
+                             <td>16</td>
+                             <td>Drama, Romance, Comedia</td>
+                             <td>Netflix</td>
+                             <td>Choi Wooshik, Kim Dami, Kim Sungchul y Noh Jungui</td>
+                         </tr>
+                         <tr>
+                             <td>The Sound Of Magic (안나라수마나라) (2022)</td>
+                             <td>6</td>
+                             <td>Drama, Musical, Fantasía</td>
+                             <td>Netflix</td>
+                             <td>Ji Changwook, Choi Sungeun y Hwang Inyeop</td>
+                         </tr>
+                         <tr>
+                             <td>Semantic Error (시맨틱 에러) (2022)</td>
+                             <td>8</td>
+                             <td>Romance, Juvenil, Escolar, Bl</td>
+                             <td>Viki</td>
+                             <td>Park Seoham, Jaechan, Song Jioh, Kim Nohjin y Kim Wonki</td>
+                         </tr>
+                         <tr>
+                             <td>Twinkling Watermelon (반짝이는 워터멜론) (2023)</td>
+                             <td>16</td>
+                             <td>Drama, Romance, Juvenil</td>
+                             <td>Viki</td>
+                             <td>Ryeoun, Choi Hyunwook, Seol Inah y Shin Eunsoo</td>
+                         </tr>
+                         <tr>
+                             <td>Juvenile Justice (소년 심판) (2022)</td>
+                             <td>10</td>
+                             <td>Drama, Legal</td>
+                             <td>Netflix</td>
+                             <td>Kim Hyesoo, Kim Mooyul, Lee Sungmin y Lee Jungeun</td>
+                         </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            <section style="overflow-x: auto">
+                <h2 id="tabla_cuatro">Mis dramas favoritos en general</h2>
+                <p>Finalmente, aquí te doy recomendaciones de dramas que objetivamente sé que no son un 10/10, no sé si cuenta como gusto culposo pero definitivamente son dramas que a pesar de sus calificaciones en otros sitios webs o sus tramas, vale la pena darles una oportunidad, lo prometo. ¡Espero que te gusten mis recomendaciones!</p>
+                <table id="" class="tabla_hover">
+                    <thead>
+                         <tr>
+                             <th>Nombre</th>
+                             <th>Episodios</th> 
+                             <th>Género</th>
+                             <th>País</th>
+                             <th>Protagonistas</th>
+                         </tr>
+                    </thead>
+                    <tbody>
+                         <tr>
+                             <td>Enchanté (ใครคือ...อองชองเต) (2022)</td>
+                             <td style="text-align: center; padding: 0">10</td>
+                             <td>Romance, Comedia, Escolar, Yaoi</td>
+                             <td>Tailandia</td>
+                             <td>Book Kasidet y Force Jiratchapong</td>
+                         </tr>
+                         <tr>
+                             <td>Cinderella and the Four Knights (신데렐라와 네 명의 기사) (2016)</td>
+                             <td style="text-align: center; padding: 0">16</td>
+                             <td>Comedia, Drama, Romance</td>
+                             <td>Corea del Sur</td>
+                             <td>Jung Ilwoo, Park Sodam, Ahn Jaehyun, Lee Jungshin, Choi Min, Son Naeun y Jo Hyejung</td>
+                         </tr>
+                         <tr>
+                             <td>Dear.M (디어엠) (2022)</td>
+                             <td style="text-align: center; padding: 0">12</td>
+                             <td>Escolar, Juvenil, Romance</td>
+                             <td>Corea del Sur</td>
+                             <td>Park Hyesoo, Noh Jungui, Woo Davi, Jaehyun, Bae Hyunsung y Lee Jinhyuk</td>
+                         </tr>
+                         <tr>
+                             <td>Star In My Mind (แล้วแต่ดาว) (2022)</td>
+                             <td style="text-align: center; padding: 0">8</td>
+                             <td>Romance, Comedia, Bl</td>
+                             <td>Tailandia</td>
+                             <td>Dunk Natachai, Joong Archen, Mek Jirakit y Mark Jiruntanin</td>
+                         </tr>
+                         <tr>
+                             <td>Snap and Spark (손가락만 까딱하면) (2024)</td>
+                             <td style="text-align: center; padding: 0">8</td>
+                             <td>Escolar, Juvenil, Romance</td>
+                             <td>Corea del  Sur</td>
+                             <td>Woo Yeon, Jeon Geonhu, Kangmin, Seo Soo, E.JI, Lee Jiwoo</td>
+                         </tr>
+                         <tr>
+                             <td>Only Boo! (แค่ที่แกง) (2024)</td>
+                             <td style="text-align: center; padding: 0">12</td>
+                             <td>Romance, Escolar, Juvenil, Bl</td>
+                             <td>Tailandia</td>
+                             <td>Keen Suvijak, Sea Dechchart, Book Kasidet, Louis Thanawin, Aun Napat, Ashi Peerakan y Milk Pansa</td>
+                         </tr>
+                     </tbody>
+                     <tfoot></tfoot>
+                </table>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="#tabla_uno">Dramas tailandeses</a></li>
+                    <li><a href="#tabla_dos">Dramas chinos</a></li>
+                    <li><a href="#tabla_tres">Dramas coreanos</a></li>
+                    <li><a href="#tabla_cuatro">Dramas favoritos</a></li>
+                </ul> 
+            </nav>
+        </main>
+        <footer>
+            <h5>Elaborado por Brenda Mayté Portilla Hernández</h5>
+        </footer>
+    </body>
+</html>
